@@ -9,12 +9,16 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web"
   },
   "keywords": [],
   "author": {
-    "name": "taojiacheng",
-    "email": "taojiacheng@dxy.cn"
+    "name": "ChurchTao",
+    "email": "swkzymlyy@gmail.com"
   },
   "license": "MIT",
   "devDependencies": {
@@ -28,16 +32,17 @@
     "@types/node": "^20.5.9",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
     "@vitejs/plugin-react": "^4.0.3",
     "electron": "26.2.0",
     "eslint": "^8.48.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
-    "typescript": "~4.5.4",
+    "typescript": "~5.2.2",
     "vite": "^4.4.5"
   },
   "dependencies": {
