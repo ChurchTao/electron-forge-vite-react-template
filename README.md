@@ -1,34 +1,29 @@
-# happy.go
+# electron-forge-vite-vue-template
 
-An Electron application with React and TypeScript
+Mini template for electron-forge combine with vite and React.
 
-## Recommended IDE Setup
+## How to start
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
-
-### Install
+Start dev:
 
 ```bash
-$ yarn
+npm run start
 ```
 
-### Development
+Build:
 
 ```bash
-$ yarn dev
+npm run publish
 ```
 
-### Build
+## Electron Forge
 
-```bash
-# For windows
-$ yarn build:win
+[Electron Forge](https://www.electronforge.io/) is a complete tool for creating, publishing, and installing modern Electron applications.
 
-# For macOS
-$ yarn build:mac
+## React + Vite
 
-# For Linux
-$ yarn build:linux
-```
+This template should help get you started developing with React in Vite.
+
+## License
+
+MIT
